@@ -39,10 +39,10 @@ class ManagerSupport(Handler):
      
 # 3
 
+# Level1Support(Level2Support(ManagerSupport))
 manager = ManagerSupport()
 level2 = Level2Support(manager)
 level1 = Level1Support(level2)
-
 level1.handle("Hard")
 
 
